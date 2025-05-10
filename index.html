@@ -5,19 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>alma</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
   </head>
   <body>
     <!-- navbar -->
     <nav
-      class="flex justify-between px-40 text-amber-900 items-center fixed top-0 left-0 right-0 shadow-md bg-white z-10"
+      id="navbar"
+      class="flex justify-between px-[8%] max-md:px-5 text-white items-center fixed top-0 left-0 right-0 py-4 bg-transparent z-10 transition-all duration-300 ease-in-out"
     >
       <h1 class="text-2xl">Kopi sharingan</h1>
-      <ul class="flex gap-3 text-lg font-semibold">
-        <li><a href="#">Beranda</a></li>
+      <ul class="flex gap-3 text-lg font-semibold max-sm:hidden">
+        <li><a href="#">Beranda</a></li> 
         <li><a href="#">Tentang</a></li>
         <li><a href="#">Produk</a></li>
         <li><a href="#">Kontak</a></li>
       </ul>
+      <i class="ph ph-list hidden max-md:block text-3xl"></i>
     </nav>
     <!-- navbar end -->
     <!-- hero -->
@@ -27,14 +39,14 @@
     >
       <div class="h-screen w-full bg-black/50 absolute"></div>
       <div class="text-white text-center">
-        <h1 class="font-bold text-6xl text-amber-500">
+        <h1 class="font-bold text-6xl max-md:text-5xl max-sm:text-4xl text-amber-500">
           Rasakan Cita Rasa <span class="block text-white">Kopi Nusantara</span>
         </h1>
-        <p class="text-lg mb-5">
+        <p class="text-lg max-sm:text-base mb-5">
           Kopi premium dari tanah Indonesia, dipetik dengan cinta disajikan
           dengan kehangatan
         </p>
-        <a href="" class="bg-amber-900 text-lg py-3 px-5 rounded-full"
+        <a href="" class="bg-amber-900 text-lg max-sm:text-base py-3 px-5 rounded-full"
           >jelajahi</a
         >
       </div>
@@ -46,7 +58,7 @@
       id="about"
       class="h-screen w-full flex justify-center items-center"
     >
-      <div class="w-[720px] text-center text-lg">
+      <div class="w-[720px] text-center text-lg max-md:mx-10">
         <h1 class="text-4xl font-bold text-amber-900 mb-3">Tentang Kami</h1>
         <p class="text-amber-900">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
@@ -55,11 +67,11 @@
           exercitationem obcaecati modi ab quo.
         </p>
         <div class="flex justify-center gap-10 mt-5">
-          <div><img src="img/kopi1.jpg" alt="" class="w-52 rounded-full"</div>
+          <div><img src="img/kopi1.jpg" alt="" class="w-52 max-md:w-40 rounded-full"</div>
           <p class="text-amber-900 font-semibold">Menggungah Selera</p>
         </div>
         <div>
-          <div><img src="img/kopi2.jpg" alt="" class="w-52 rounded-full"</div>
+          <div><img src="img/kopi2.jpg" alt="" class="w-52 max-md:w-40 rounded-full"</div>
           <p class="text-amber-900 font-semibold">Roasting Tradisional</p>
         </div>
       </div>
@@ -68,13 +80,13 @@
     <!-- produk -->
     <section
       id="produk"
-      class="h-screen w-full flex justify-center items-center bg-amber-100"
+      class="xl:h-screen py-10 w-full flex justify-center items-center bg-amber-100"
     >
       <div>
         <h1 class="font-bold text-4xl text-amber-900 text-center mb-5">Produk Unggulan</h1>
-        <div class="flex gap-5">
+        <div class="flex flex-wrap justify-center gap-5">
             <div class="w-96 bg-white p-2 rounded-lg shadow-md space-y-2">
-                <img src="img/kopi2.jpg" alt="" class="rounded-md">
+                <img src="img/kopi3.jpg" alt="" class="rounded-md">
                 <h1 class="font-bold text-xl text-amber-900">kopi aceh</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique illum et provident. Neque, fugit qui.</p>
                 </p>
@@ -100,11 +112,13 @@
     <!-- produk end -->
 
     <!-- footer  -->
-<footer id="kontak" class="py-10 bg-amber-900 text-white text-center space-y-5">
+<footer id="kontak" class="py-10 bg-amber-900 text-white text-center space-y-5 max-sm:space-y-3">
     <h1 class="font-bold text -2xl">Hubungi Kami</h1>
     <p class="text-lg">Email: intan12022007@gmail.com | 082117963167</p>
     <p class="text-lg">&copy 2025 Kopi Sharingan</p>
 </footer>
     <!-- footer end -->
+
+    <script src="script.js"></script>
   </body>
 </html>
